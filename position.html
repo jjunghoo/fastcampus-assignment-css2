@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mother {
+            width: 582px;
+            height: 200px;
+            background-color: red;
+        }
+        .mother .son {
+            width: 49.484536%; /* 288(자식)/582(부모) x 100*/
+            height: 100px;
+            margin: 0 auto;
+            background-color: yellow;
+        }
+        .mother1 {
+            /* width: 648px; */
+            background-color: greenyellow;
+            padding: 26px 36px;
+            
+        }
+        .mother1 .son1 {
+            width: 23.148148%; /* 150/648 */
+            /* height: 200px; */
+            padding-top: 23.148148%;
+            background-color: yellow;
+            float: left;
+        }
+        .mother1 .son1 + .son1 {
+            margin-left: 2.469135%; /* 16 / 648 */
+        }
+        .mother1::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="mother">
+        <div class="son"></div>
+    </div>
+    <br>
+
+    <div class="mother1">
+        <div class="son1"></div>
+        <div class="son1"></div>
+        <div class="son1"></div>
+        <div class="son1"></div>
+    </div>
+</body>
+</html>

@@ -99,6 +99,7 @@ article > .writer {
 	/* border: 1px solid red; */
 	height: 27px;
 	color: black;
+	position: relative;
 }
 .index > * {
 	/* border: 1px solid blue; */
@@ -106,6 +107,28 @@ article > .writer {
 .index > .avata {
 	font-size: 0;
 	float: left;
+}
+.index > .avata > .notice {
+	/* border: 1px solid red; */
+	font-size: 9px;
+	/* line-height: 1px; */
+	position: absolute;
+	width: auto;
+	min-width: 10px;
+	height: 10px;
+	border-radius: 7px;
+	background-color: red;
+	text-align: center;
+	color: #fff;
+	left: 35px;
+	top: 12px;
+	padding: 2px;
+}
+.index > .avata > .notice > i {
+	/* border: 1px solid blue; */
+	font-style: normal;
+	position: relative;
+	top: -2;
 }
 .index > .avata > img {
 	vertical-align: -7px;
