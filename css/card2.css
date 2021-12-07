@@ -1,12 +1,13 @@
 @charset 'utf-8';
 /* 웹폰트 설정 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* reset */
 body {
-    font:normal 16px 'Roboto', sans-serif;
-	line-height:1.3;
-	color:#666666;
-	background-color:#fff;
+    font:normal 12px 'Roboto', sans-serif;
+	line-height:1.2;
+	color:#333;
+	background-color:#666666;
 	margin:0;
 	padding:0;
 }
@@ -26,3 +27,112 @@ a {text-decoration:none;}
 /* card avata */
 
 /* card avata top */
+
+/* common */
+button {
+	border: none;
+	color: white;
+}
+button.small {
+	font-size: 10px;
+	padding: 5px 10px;
+	border-radius: 8px;
+}
+button.big {
+	font-size: 14px;
+	padding: 10px 25px;
+	border-radius: 13px;
+}
+button.green {
+	background-color: #27AE60;
+}
+button.red {
+	background-color: red;
+}
+
+/* typograph */
+.title {
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+}
+.writer {
+	color: #4f4f4f;
+	font-size: 14px;
+	font-weight: normal;
+	display: block;
+}
+
+/* card layout */
+.card {
+	width: 280px;
+	/* height: 280px; */
+	background: #FFFFFF;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+/* photo */
+.photo > img {
+	vertical-align: top;
+}
+/* article */
+article {
+	padding: 12px 16px;
+}
+article > .writer {
+	margin: 5px 0;
+}
+
+/* title_area */
+.title_area {
+	padding: 10px;
+}
+.title_area > .title {
+	margin: 5px 0;
+}
+/* index */
+.index {
+	padding: 16px 14px;
+	/* border: 1px solid red; */
+	height: 27px;
+	color: black;
+}
+.index > * {
+	/* border: 1px solid blue; */
+}
+.index > .avata {
+	font-size: 0;
+	float: left;
+}
+.index > .avata > img {
+	vertical-align: -7px;
+	margin-right: 3px;
+}
+.index > .avata > strong {
+	font-size: 14px;
+	/* border: 1px solid red; */
+}
+.index > .sns {
+	float: right;
+	font-size: 0; /* 이미지 간격이 생겨서 빈공간을 없애기위헤 */
+	margin-top: 2px;
+}
+.index > .sns > div {
+	/* border: 1px solid red; */
+	display: inline-block;
+}
+.index > .sns > div + div {
+	margin-left: 12px;
+}
+.index > .sns > div > span {
+	font-size: 12px;
+	font-weight: normal;
+}
+.index > .sns > div > img {
+	vertical-align: -5px;
+	/* border: 1px solid blue; */
+	margin-right: 2px;
+}
